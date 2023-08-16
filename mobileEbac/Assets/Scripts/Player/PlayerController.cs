@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ebac.Core.Singleton;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
     //publics
     [Header("Lerp")]
@@ -19,8 +20,15 @@ public class PlayerController : MonoBehaviour
     //privates
     private bool _canRun;
     private Vector3 _pos;
+    private float _currentSpeed;
 
-   
+    private void Start()
+    {
+        ResetSpeed();
+    }
+
+
+
 
     void Update()
     {
@@ -31,7 +39,7 @@ public class PlayerController : MonoBehaviour
         _pos.z = transform.position.z;
 
         transform.position = Vector3.Lerp(transform.position, _pos, lerpSpeed * Time.deltaTime);
-        transform.Translate(transform.forward * speed * Time.deltaTime);
+        transform.Translate(transform.forward * _currentSpeed * Time.deltaTime);
     }
 
 
@@ -61,4 +69,17 @@ public class PlayerController : MonoBehaviour
     {
         _canRun = true;
     }
+
+
+    #region POWERUPS
+    public void PowerUpSpeedUp(float f)
+    {
+        _currentSpeed = f;
+    }
+
+    public void ResetSpeed()
+    {
+        _currentSpeed = speed;
+    }
+    #endregion
 }
