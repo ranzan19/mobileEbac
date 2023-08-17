@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ebac.Core.Singleton;
+using TMPro;
+using DG.Tweening;
 
 public class PlayerController : Singleton<PlayerController>
 {
@@ -17,13 +19,22 @@ public class PlayerController : Singleton<PlayerController>
 
     public GameObject endScreen;
 
+    [Header("text")]
+    public TextMeshPro uiTextPowerUp;
+
+    public bool invencible = true;
+    
+    
     //privates
     private bool _canRun;
     private Vector3 _pos;
     private float _currentSpeed;
+    private Vector3 _startposition;
+
 
     private void Start()
     {
+        _startposition = transform.position;
         ResetSpeed();
     }
 
@@ -47,7 +58,7 @@ public class PlayerController : Singleton<PlayerController>
     {
         if (collision.transform.tag == tagToCheckEnemy)
         {
-            EndGame();
+            if(!invencible) EndGame();
         }
     }
 
@@ -55,7 +66,7 @@ public class PlayerController : Singleton<PlayerController>
     {
         if(other.transform.tag == tagToCheckEndLine)
         {
-            EndGame();
+            if(!invencible) EndGame();
         }
     }
 
@@ -72,14 +83,44 @@ public class PlayerController : Singleton<PlayerController>
 
 
     #region POWERUPS
+    public void SetPowerUpText(string s)
+    {
+        uiTextPowerUp.text = s;
+    }
+
+
     public void PowerUpSpeedUp(float f)
     {
         _currentSpeed = f;
     }
 
+    public void SetInvencible(bool b = true)
+    {
+        invencible = b;
+    }
+
     public void ResetSpeed()
     {
         _currentSpeed = speed;
+    }
+
+    public void ChangeHeight(float amount, float duration, float animationDuration, Ease ease)
+    {
+        /*var p = transform.position;
+        p.y = _startposition.y + amount;
+        transform.position = p;*/
+
+        transform.DOMoveY(_startposition.y + amount, animationDuration).SetEase(ease);//.OnComplete(ResetHeight);
+        Invoke(nameof(ResetHeight), duration);
+    }
+
+    public void ResetHeight()
+    {
+        /*var p = transform.position;
+        p.y = _startposition.y;
+        transform.position = p;*/
+
+        transform.DOMoveY(_startposition.y, .1f);
     }
     #endregion
 }
