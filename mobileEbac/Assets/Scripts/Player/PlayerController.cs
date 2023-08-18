@@ -23,8 +23,10 @@ public class PlayerController : Singleton<PlayerController>
     public TextMeshPro uiTextPowerUp;
 
     public bool invencible = true;
-    
-    
+
+    [Header("text")]
+    public GameObject coinCollector;
+
     //privates
     private bool _canRun;
     private Vector3 _pos;
@@ -121,6 +123,11 @@ public class PlayerController : Singleton<PlayerController>
         transform.position = p;*/
 
         transform.DOMoveY(_startposition.y, .1f);
+    }
+
+    public void ChangeCoinCollectorSize(float amount)
+    {
+        coinCollector.transform.localScale = Vector3.one * amount;
     }
     #endregion
 }
