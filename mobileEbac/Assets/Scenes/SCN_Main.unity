@@ -1044,7 +1044,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.20086887, y: -0.05836941, z: 0.011990742, w: 0.9778042}
+  m_LocalRotation: {x: 0.20086887, y: -0.058369372, z: 0.011990734, w: 0.9778042}
   m_LocalPosition: {x: 1.04, y: 1.9800003, z: -8.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1372,6 +1372,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1277595997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277595999}
+  - component: {fileID: 1277595998}
+  m_Layer: 0
+  m_Name: CoinsAnimationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1277595998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277595997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f354dc33367a7234b9df4bf7cdc85ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itens: []
+  scaleDuration: 0.2
+  scaleTimeBetweenPieces: 0.1
+  ease: 27
+--- !u!4 &1277595999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277595997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.16, y: 6.4913077, z: -7.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1302757657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8815749621509249023, guid: b58ee77af5099a44e995ce0ebdac88b0, type: 3}
@@ -1417,6 +1464,9 @@ MonoBehaviour:
   timeBetweenPieces: 0.3
   _index: 1
   _spawnedPieces: []
+  scaleDuration: 0.1
+  scaleTimeBetweenPieces: 0.1
+  ease: 27
 --- !u!4 &1333188640
 Transform:
   m_ObjectHideFlags: 0
@@ -1490,7 +1540,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375982374}
-  m_LocalRotation: {x: 0.20086887, y: -0.05836941, z: 0.011990742, w: 0.9778042}
+  m_LocalRotation: {x: 0.20086887, y: -0.058369372, z: 0.011990734, w: 0.9778042}
   m_LocalPosition: {x: 1.04, y: 1.9800003, z: -8.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

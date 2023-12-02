@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 19
+  controlID: 23
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 29
+  controlID: 117
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 78
+  controlID: 118
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -51204
+  m_LastSelectedObjectID: -112934
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -460,22 +460,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/CoinsAnimator
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/CoinsAnimator
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\User\Documents\GitHub\mobileEbac\mobileEbac
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 126}
-    m_SelectedIDs: 2a450000
-    m_LastClickedID: 17706
-    m_ExpandedIDs: 0000000026450000284500002a4500002c4500002e450000304500003245000000ca9a3b
+    scrollPos: {x: 0, y: 110}
+    m_SelectedIDs: 24800000
+    m_LastClickedID: 32804
+    m_ExpandedIDs: 0000000026450000284500002a4500002c450000304500003245000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -534,15 +534,15 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000583e00003a3f0000da3f000000000000143f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PFB_Coin
-      m_OriginalName: PFB_Coin
+      m_Name: CoinsAnimationManager
+      m_OriginalName: CoinsAnimationManager
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 16148
+      m_UserData: 47076
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -624,9 +624,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8af2ffff50fbffff403c0000
+      m_SelectedIDs: da46feff
+      m_LastClickedID: -112934
+      m_ExpandedIDs: 16ddffffccddffff60e0ffff26f2ffff3cf6ffff82f6ffff50fbffff52480000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -686,9 +686,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.2699935, y: 7.7014275, z: -2.1089735}
+    m_Target: {x: 2.63967, y: 6.4913077, z: -2.7117734}
     speed: 2
-    m_Value: {x: 2.37, y: -2.8, z: 0.120000005}
+    m_Value: {x: 2.63967, y: 6.4913077, z: -2.7117734}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -735,13 +735,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.23935817, y: -0.07274064, z: 0.017985135, w: 0.96804357}
+    m_Target: {x: 0.2820208, y: 0.0014381506, z: -0.0004235067, w: 0.9594157}
     speed: 2
-    m_Value: {x: 0.23935634, y: -0.072740085, z: 0.017984997, w: 0.9680362}
+    m_Value: {x: 0.28201848, y: 0.0014381388, z: -0.0004235032, w: 0.9594078}
   m_Size:
-    m_Target: 3.9008548
+    m_Target: 5.4747944
     speed: 2
-    m_Value: 1.2124356
+    m_Value: 5.4747944
   m_Ortho:
     m_Target: 0
     speed: 2

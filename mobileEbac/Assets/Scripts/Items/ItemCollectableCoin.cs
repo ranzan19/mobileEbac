@@ -9,6 +9,12 @@ public class ItemCollectableCoin : ItemCollectableBase
     public float lerp = 5f;
     public float minDistance = 1f;
 
+    private void Start()
+    {
+        CoinsAnimationManager.Instance.RegisterCoin(this);
+    }
+
+
     protected override void OnCollect()
     {
         base.OnCollect();
