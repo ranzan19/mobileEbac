@@ -59,7 +59,6 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
             itens[i].transform.DOScale(1, scaleDuration).SetEase(ease);
             yield return new WaitForSeconds(scaleTimeBetweenPieces);
         }
-
     }
 
 
