@@ -54,7 +54,7 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
 
         yield return null;
 
-        for (int i = 0; 1 < itens.Count; i++)
+        for (int i = 0; i < itens.Count; i++)
         {
             itens[i].transform.DOScale(1, scaleDuration).SetEase(ease);
             yield return new WaitForSeconds(scaleTimeBetweenPieces);

@@ -104,14 +104,14 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator ScalePiecesByTime()
     {
-        foreach(var p in _spawnedPieces)
+        foreach (var p in _spawnedPieces)
         {
             p.transform.localScale = Vector3.zero;
         }
 
         yield return null;
 
-        for(int i = 0; 1 < _spawnedPieces.Count; i++)
+        for (int i = 0; i < _spawnedPieces.Count; i++)
         {
             _spawnedPieces[i].transform.DOScale(1, scaleDuration).SetEase(ease);
             yield return new WaitForSeconds(scaleTimeBetweenPieces);
