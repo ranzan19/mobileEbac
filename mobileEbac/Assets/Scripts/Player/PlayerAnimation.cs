@@ -13,10 +13,8 @@ public class PlayerAnimation : MonoBehaviour
     void Start()
     {
         transform.localScale = Vector3.zero;
+        Invoke("ScalePlayer", 3f);
     }
-
-
-
 
     private void Update()
     {

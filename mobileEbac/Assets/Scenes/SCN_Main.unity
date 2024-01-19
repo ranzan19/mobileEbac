@@ -616,7 +616,7 @@ MonoBehaviour:
   coinCollector: {fileID: 705593296}
   animatorManager: {fileID: 1073955735}
   _bounceHelper: {fileID: 481092012}
-  _playerAnimation: {fileID: 0}
+  playerAnimation: {fileID: 0}
 --- !u!114 &481092019
 MonoBehaviour:
   m_ObjectHideFlags: 0

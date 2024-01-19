@@ -32,7 +32,7 @@ public class PlayerController : Singleton<PlayerController>
 
     [SerializeField] private BounceHelper _bounceHelper;
 
-    [SerializeField] private PlayerAnimation _playerAnimation;
+    [SerializeField] private PlayerAnimation playerAnimation;
 
     //privates
     private bool _canRun;
@@ -57,8 +57,8 @@ public class PlayerController : Singleton<PlayerController>
 
     public void ScalePlayer()
     {
-        if (_playerAnimation != null)
-        _playerAnimation.ScalePlayer();
+        if(playerAnimation != null)
+        playerAnimation.ScalePlayer();
     }
 
 
